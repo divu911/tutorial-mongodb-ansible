@@ -1,4 +1,1 @@
-*.retry
-dockerpass.txt
-.DS_Store
-*.pem
+## Add files to ignore ###
