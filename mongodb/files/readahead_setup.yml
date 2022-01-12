@@ -1,0 +1,5 @@
+---
+# defaults file for ansible-role-readahead_setup
+
+_readahead_setup:
+  read_ahead_kb: 32
