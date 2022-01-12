@@ -2,15 +2,14 @@
 # tasks file for mongoDB setup
 
 - name: install mongoDB
-  apt: 
+  yum: 
     name: mongodb
     state: present
-    update_cache: yes
-
+    
 - name: copy config file
   copy:
     src: mongodb.conf
-    dest: /etc/mongodb.conf
+    dest: /etc/mongod.conf
     owner: root
     group: root
     mode: 0644
@@ -81,8 +80,3 @@
     enabled: yes
     state: started
 
-- name: install ntp
-  apt: 
-    name: ntp
-    state: present
-    update_cache: yes
